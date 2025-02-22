@@ -14,6 +14,10 @@ model = joblib.load("ada.pkl")  # Ensure the model is saved
 bow_vectorizer = joblib.load("bow.pkl")  # Load BoW vectorizer
 tfidf_vectorizer = joblib.load("tfidf.pkl")  # Load tfidf vectorizer
 
+# for word tokenzier
+nltk.download('punkt_tab')
+nltk.download('wordnet')
+
 # for POS
 nltk.download('averaged_perceptron_tagger_eng')
 
